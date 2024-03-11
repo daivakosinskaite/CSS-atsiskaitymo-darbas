@@ -1,0 +1,442 @@
+header {
+    box-sizing: border-box;
+    border: 2px;
+    border-color: black;
+    width: 98vw;
+    height: 9vh;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    background-color: aliceblue;
+}
+
+.logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 7vw;
+    float: left;
+   
+}
+
+.pavadinimas {
+    margin-top: 28px;
+    width: 30vw;
+    float: left;
+    font-size: 3vh;
+    
+}
+
+.navigacija {
+    margin-top: 28px;
+    flex-direction: row;
+    display: flex;
+    float: right;
+    width: 40vw;
+    justify-content: space-between;
+    font-size: 3vh;
+    
+}
+
+.head2, .head3, .head4 {
+    color: black;
+    text-decoration: none;
+    height: 4vh;
+    flex-direction: row;
+}
+
+
+
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    justify-content: space-between;
+    background-image: url(./back.jpg); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    align-items: 50 50 0 0;
+    
+}
+.background ::after {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgb(223, 218, 219);
+    opacity: 0.2;
+
+}
+
+/* .background ::before {
+    content: ' ';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+.white_box {
+    z-index: 1;
+}
+ */
+
+.white_box {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(250, 245, 176);
+    float: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 4vh;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.page_name {
+    margin-top: 8vh;
+}
+
+.big_logo {
+    margin-bottom: 5vh;
+}
+
+.Sekcijos_pav1 {
+    margin-top: 10vh;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 {
+    width: 94vw;
+    /* height: 80vh; */
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+}
+
+.container1, .container2 {
+    margin-left: 1vw;
+    width: 46vw;
+    /* height: 78vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.gyv1, .gyv2, .gyv3, .gyv4, .gyv5, .gyv6 {
+    width: 40vw;
+    height: 20vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.shark2, .coral2, .fish2, .jellyfish2, .vezlys2, .kriaukle2 {
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sekcijos_pav2 {
+    margin-top: 10vh;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 {
+    width: 90vw;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3vw;
+}
+
+.container3, .container4 {
+    width: 90vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subcontainer31, .subcontainer32, .subcontainer33, .subcontainer34 {
+    width: 90vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+} 
+
+
+.moliuskai1, .moliuskai2, .moliuskai3, .moliuskai4, .moliuskai5, .moliuskai6, .moliuskai7, .moliuskai8, .moliuskai9, .moliuskai10, .moliuskai11, .moliuskai12 {
+    width: 14vw;
+    margin-top: 2vh;
+}
+
+.antraste {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.Sekcijos_pav3 {
+    margin-top: 10vh;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3 {
+    width: 100vw;
+    flex-direction: column;
+    display: flex;
+}
+
+.container6 {
+    width: 90vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+
+}
+.band1, .band2, .band3 {
+    width: 25vw;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        width: 100vw;
+        height: 18vh;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: large;
+        
+    }
+    
+    .logo {
+        margin-left: 30px;
+        float: left;
+        font-size: 3vh;
+    }
+    .pavadinimas {
+        display: none;
+    }
+    
+    .navigacija {
+        width: 100vw;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        text-decoration: none;
+    }
+
+    .white_box {
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(250, 245, 176);
+        float: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 4vh;
+        justify-content: space-between;
+        text-align: center;
+        
+    }
+    
+    .page_name {
+        margin-top: 5vh;
+    }
+    
+    .big_logo {
+        margin-bottom: 5vh;
+    }
+    
+
+    .section1 {
+        width: 70vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .container1, .container2 {
+        margin-left: 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .gyv1, .gyv2, .gyv3, .gyv4, .gyv5, .gyv6 {
+        width: 70vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .shark2, .coral2, .fish2, .jellyfish2, .vezlys2, .kriaukle2 {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 1px;
+    }
+
+    .section2 {
+        width: 90vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3vw;
+    }
+    
+    .container3, .container4 {
+        width: 90vw;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .subcontainer31, .subcontainer32, .subcontainer33, .subcontainer34 {
+        /* width: 90vw; */
+        /* height: 40vh; */
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    .moliuskai1, .moliuskai2, .moliuskai3, .moliuskai4, .moliuskai5, .moliuskai6, .moliuskai7, .moliuskai8, .moliuskai9, .moliuskai10, .moliuskai11, .moliuskai12 {
+        width: 80vw;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mol_12, .mol_22, .mol_32, .mol_42, .mol_52, .mol_62, .mol_72, .mol_82, .mol_92, .mol_102, .mol_112, .mol_122 {
+        width: 180px;
+    }
+
+    .antraste {
+        font-weight: 900;
+    }
+
+    .section3 {
+        width: 100vw;
+        flex-direction: column;
+        display: flex;
+    }
+    
+    .container6 {
+        width: 90vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .band1, .band2, .band3 {
+        width: 80vw;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    
+}
+
+@media (min-width: 600px) and  (max-width: 950px) {
+    .pavadinimas {
+        display: none;
+    }
+
+    .navigacija {
+        width: 80vw;
+        margin-top: 28px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section1 {
+        width: 94vw;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3vw;
+    }
+    
+    .container1, .container2 {
+        margin-left: 3vw;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .gyv1, .gyv2, .gyv3, .gyv4, .gyv5, .gyv6 {
+        width: 80vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .shark2, .coral2, .fish2, .jellyfish2, .vezlys2, .kriaukle2 {
+        margin-left: 15px;
+        width: 40vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section2 {
+        width: 90vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 3vw;
+    }
+    
+    .container3, .container4 {
+        width: 90vw;
+        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .subcontainer31, .subcontainer32, .subcontainer33, .subcontainer34 {
+        width: 90vw;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    } 
+    
+    
+    .moliuskai1, .moliuskai2, .moliuskai3, .moliuskai4, .moliuskai5, .moliuskai6, .moliuskai7, .moliuskai8, .moliuskai9, .moliuskai10, .moliuskai11, .moliuskai12 {
+        width: 180px;
+        margin-top: 2vh;
+    }
+}
